@@ -45,14 +45,6 @@ runtime! debian.vim
 "set hidden             " Hide buffers when they are abandoned
 "set mouse=a		" Enable mouse usage (all modes)
 
-set tabstop=4
-set shiftwidth=4
-set expandtab
-set number
-set nowrap
-set cindent
-set nobackup
-set paste
 
 
 " syntax highlighting
@@ -71,3 +63,11 @@ endif
 
 set autoindent
 set hlsearch
+set tabstop=4
+set shiftwidth=4
+set expandtab
+set number
+set nowrap
+set cindent
+set nobackup
+set paste
