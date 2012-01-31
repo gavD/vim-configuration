@@ -17,9 +17,6 @@ runtime! debian.vim
 
 " Vim5 and later versions support syntax highlighting. Uncommenting the next
 " line enables syntax highlighting by default.
-if has("syntax")
-  syntax on
-endif
 
 " If using a dark background within the editing area and syntax highlighting
 " turn on this option as well
@@ -48,8 +45,29 @@ endif
 "set hidden             " Hide buffers when they are abandoned
 "set mouse=a		" Enable mouse usage (all modes)
 
+set tabstop=4
+set shiftwidth=4
+set expandtab
+set number
+set nowrap
+set cindent
+set nobackup
+set paste
+
+
+" syntax highlighting
+if has("syntax")
+  syntax on
+endif
+
+let g:syntastic_enable_signs=1
+let g:syntastic_auto_jump=1
+let g:syntastic_auto_loc_list=1
+
 " Source a global configuration file if available
 if filereadable("/etc/vim/vimrc.local")
   source /etc/vim/vimrc.local
 endif
 
+set autoindent
+set hlsearch
