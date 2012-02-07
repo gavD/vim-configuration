@@ -71,3 +71,8 @@ set nowrap
 set cindent
 set nobackup
 set paste
+
+noremap <Up> <nop>
+noremap <Down> <nop>
+noremap <Left> <nop>
+noremap <Right> <nop>
